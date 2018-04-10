@@ -1,6 +1,7 @@
 body{
     margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
 }
 *{
     box-sizing: border-box;
@@ -15,6 +16,7 @@ body{
     width: 100%;
     border-bottom: 3px solid #f00;
     margin-bottom: 30px;
+    padding-top: 35px;
 }
 .main-header .container-img {
     display: block;
@@ -33,6 +35,7 @@ body{
     margin: 10px e 20px;
     text-transform: uppercase;
 }
+
 /*Header Menu*/
 .menu {
     background: #f00;
@@ -55,46 +58,46 @@ body{
     text-decoration: none;
 }
 .menu .container-item .item a:hover{
-    background: #3c3c3c;
-    color: 	#00FF00;    
+    background: #756D6D;
+    color: 	#A1AEEB;    
 }
+
 /*Sections*/
 section {
     float: left;
     width: 100%;
-    padding: 10px 170px;
+    padding: 10px 12.5%;
 }
 section h3 {
     font-size: 25px;
     background: #f00;
-    color: #ffffff;
+    color: #fff;
     float: left;
     clear: both;
     width: auto;
     padding: 5px;
     margin-bottom: 10px;
 }
-section > p, section address, section ul {
+section p, section address, section ul {
     float: left;
     width: 100%;
 }
-section p, section address{
+section > p, section address {
     font-size: 14px;
     margin: 5px 0;
-    padding-left: 10px;
+    padding-left: 20px;
 }
-section address{
+section address {
     font-style: normal;
 }
-section .ul-list{
+section .ul-list {
     padding-left: 20px;
     list-style: none;
 }
 section .ul-list li {
     margin: 10px 0;
-}
-section .ul-list p {
-    padding: 0;
+    float: left;
+    width: 100%;    
 }
 section .ul-list a{
     color: #f00;
@@ -102,12 +105,12 @@ section .ul-list a{
     font-size: 14px;
     padding: 5px;
     border: 2px solid #f00;
-    margin-top: 10px;
-    
+    float: left;
+    margin-top: 10px;    
 }
 section .ul-list a:hover {
     background: #f00;
-    color: #ffffff;
+    color: #fff;
 }
 section .ul-list h4 {
     font-size: 18px;
@@ -116,11 +119,85 @@ section .ul-list h4 {
     clear: both;
     margin-bottom: 10px;
 }
+
 /*Footer*/
 .main-footer{
     float: left; 
     width: 100%;
     color: #ffffff;
     text-align: center;
-    
+    padding: 10px 0;
+    background: #000;
+    margin-top: 40px;
+}
+
+/*Form*/
+.main-form {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+}
+.main-form .title {
+    font-size: 25px;
+    margin: 10px 0 20px;
+}
+.main-form .container-text {
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.main-form .container-text label {
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.main-form .container-text input:not([type=radio]):not([type=file]) {
+    float: left;
+    width: 100%;
+    border: 2px solid #000;
+    padding: 10px;
+}
+.main-form .container-text.radio label {
+    float: left;
+    width: auto;
+    margin: 0 10px 0;
+    font-size: 16px;
+    clear: none;
+}
+.main-form .container-text.radio input {
+    margin-right: 5px;
+}
+.main-form .container-text select {
+    width: 250px;
+    padding: 10px;
+    border: 2px solid #000;
+}
+.main-form .container-text textarea {
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    font: 400 13.3333px  Arial;
+}
+.main-form .container-text button {
+    width: 200px;
+    padding: 15px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.main-form .btn-submit {
+    background: black;
+    color: white;
+    float: left;
+}
+.main-form .btn-reset {
+    background: white;
+    color: black;
+    float: right;
 }

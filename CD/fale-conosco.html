@@ -4,64 +4,63 @@
         <title>Fale Conosco</title>
         <meta charset="utf-8">
         <meta name="author" content="Dalton Paixão Junior">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
     <body>
-        <header>
-            <figure>
+        <header class="main-header">
+            <figure class="container-img">
                 <img width="300px" height="300px" border="3" title="Pearl Jam" src="assets/img/01.jpg" alt="Stickman" />
             </figure>
-            <h1>Dalton Paixão Junior</h1>
-            <nav>
-                <ul>
-                    <li>
+            <h1 class="main-title">Dalton Paixão Junior</h1>
+            <nav class="menu">
+                <ul class="container-item">
+                    <li class="item">
                         <a href="curriculum.html">Curriculum Vitae</a> 
                     </li>
-                    <li>
+                    <li class="item">
                         <a href="fale-conosco.html">Fale Conosco</a>
                     </li>
-                    <li>
+                    <li class="item">
                         <a href="https://github.com/DaltonJr?tab=repositories" target="_blank">Projetos </a>
                     </li>
                 </ul>
             </nav>
         </header>
         <section>
-            <h2>Fale Conosco</h2>
-            <form>
-                <div>
+            <form class="main-form">
+                <h2 class="title">Fale Conosco</h2>
+                <div class="container-text">
                     <label for="name">Nome:</label>
                     <input type="text" id="name" required>
                 </div>
-                <div>
-                    <label>
-                        <input type="radio" name="sex" value="Masculino">Masculino
-                    </label>
-                    <br>
+                <div class="container-text radio">
                     <label>
                         <input type="radio" name="sex" value="Feminino">Feminino
                     </label>
-                    <br>
+                    <label>
+                        <input type="radio" name="sex" value="Masculino">Masculino
+                    </label>
                     <label>
                         <input type="radio" name="sex" value="Prefiro não comentar">Prefiro não comentar
                     </label>
                 </div>
-                <div>
+                <div class="container-text">
                     <label for="email">Email:</label>
                     <input type="email" id="email"  required>
                 </div>
-                <div>
+                <div class="container-text">
                     <label for="website">Website</label>
                     <input type="url" id="website">
                 </div>
-                <div>
+                <div class="container-text">
                     <label for="phone">Telefone</label>
                     <input type="tel" id="phone" pattern="[0-9]{0,9}" required>
                 </div>
-                <div>
+                <div class="container-text">
                     <label for="city">Cidade</label>
                     <input type="text" id="city"  required>
                 </div>
-                <div>
+                <div class="container-text">
                     <label for="state">Estado</label>
                     <select id="state"  required>
                         <option value="RS">RS</option>
@@ -71,7 +70,7 @@
                     </select>
                 </div>
                 <br>
-                <div>
+                <div class="container-text">
                     <label for="subject">Assunto</label>
                     <select id="subject" required>
                         <option value="sugestao">Sugestão</option>
@@ -79,19 +78,22 @@
                     </select>
                 </div>
                 <br>
-                <div>
+                <div class="container-text">
                     <label for="archive">Arquivo</label>
                     <input type="file" id="archive">
                 </div>
                 <br>
-                <div>
+                <div class="container-text">
                     <label for="message">Mensagem</label>
                     <br>
                     <textarea id="message" maxlength="140" cols="30" rows="5" placeholder="Escreva sua mensagem aqui"></textarea>
                 </div>
-                <button type="submit">Enviar</button>
-                <button type="reset">Reiniciar</button>       
+                <div class="container-text">
+                    <button type="submit" class="btn-submit">Enviar</button>
+                    <button type="reset" class="btn-reset">Reiniciar</button>  
+                </div>
             </form>
         </section>
+        <footer class="main-footer">Todos os direitos reservados.</footer>
     </body>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="valor_1">
+    <input type="text" id="valor_2">
+    <a href="#" id="btn_somar">Somar</a>
+
+    <h1 id="resultado"></h1>
+
+    <script>
+        var $valor_1 = document.getElementById('valor_1');
+        var $valor_2 = document.getElementById('valor_2');
+        var $btn_somar = document.getElementById('btn_somar');
+        var $resultado = document.getElementById('resultado');
+
+        $btn_somar.onclick = function(){
+            var $soma = parseInt($valor_1.value)+ parseInt($valor_2.value);
+            $resultado.innerHTML = $soma;
+        };
+
+    </script>
+    
+</body>
+</html>
